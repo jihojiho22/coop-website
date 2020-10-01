@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+    </head>
+    <body>
+        <template id="product">
+            <article class="product">
+                <div class="img-container">
+                    <div class="product-img"></div>
+
+                    <button class="product-add-button">
+                        <i class="fas fa-shopping-cart"></i>
+                        add to bag
+                    </button>
+                </div>
+
+                <h3 class="product-title"></h3>
+                <h4 class="product-price"></h4>
+            </article>
+        </template>
+
+        <template id="cart-item">
+            <div class="cart-item" data-id="">
+                <div class="cart-item-img"></div>
+                <div>
+                    <h4 class="cart-item-title"></h4>
+                    <h5 class="cart-item-price"></h5>
+                    <span class="cart-remove-button">remove</span>
+                </div>
+                <div>
+                    <i class="fas fa-chevron-up"></i>
+                    <label>Amount: <input class="cart-item-amount" type="number" min="1" max="10" value="1" /></label>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </template>
+
+        <nav class="navbar">
+            <div class="navbar-center">
+                <button class="nav-icon">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <img src="img/logo.png" class="logo" alt="Logo"/>
+                <div class="cart-btn">
+                    <span class="nav-icon">
+                        <i class="fas fa-cart-plus"></i>
+                    </span>
+                    <div class="cart-quantity">0</div>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="side">
+            <ul class="side-bar">
+                <li><a href="#" class="nav-btn" data-id="home">home</a></li>
+                <li><a href="#" class="nav-btn" data-id="about">about</a></li>
+                <li><a href="#" class="nav-btn" data-id="contact">contact</a></li>
+                <li><a href="#" class="nav-btn" data-id="togo">togo</a></li>
+            </ul>
+        </div>
+
+        <section class="section">
+            <div class="title">
+                <h1>COOP KOREAN RESTAURANT</h1>
+                <button class="order">
+                    TRY IT NOW
+                    <i class="fas fa-hamburger"></i>
+
+
+                </button>
+
+
+            </div>
+            <div class="content" id="home">
+                home
+            </div>
+
+            <div class="content" id="about">
+
+                A hamburger (also burger for short) is a sandwich consisting of one or more cooked patties of ground
+                meat, usually beef, placed inside a sliced bread roll or bun. The patty may be pan fried, grilled,
+                smoked[1] or flame broiled. Hamburgers are often served with cheese, lettuce, tomato, onion,
+                pickles, bacon, or chiles; condiments such as ketchup, mustard, mayonnaise, relish, or a "special
+                sauce", often a variation of Thousand Island dressing; and are frequently
+                placed on sesame seed buns. A hamburger topped with cheese is called a cheeseburger.[2]
+            </div>
+            <div class="content" id="contact">
+                111-1111-1111<br>
+                qwert@gmail.com
+            </div>
+            <div class="content" id="togo">
+                togo
+            </div>
+
+
+        </section>
+        <section class="menu-section">
+            <div class="menu-section-title">
+                <h1>Menu</h1>
+            </div>
+
+            <div class="products-center"></div>
+        </section>
+
+        <div class="cart-overlay">
+            <div class="cart">
+                <span class="close-cart">
+                    <i class="fas fa-window-close"></i>
+                </span>
+                <h2>your cart</h2>
+                <div class="cart-content">
+                    <!-- cart item -->
+                    <!-- end of cart item -->
+                </div>
+                <div class="cart-footer">
+                    <h3>your total : $ <span class="cart-total">0</span></h3>
+                    <button class="clear-cart banner-btn">clear cart</button>
+                    <button class="buy-cart banner-btn">buy now</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://kit.fontawesome.com/41a06d658a.js" crossorigin="anonymous"></script>
+        <script type="module" src="js/main.js"></script>
+    </body>
+</html>
